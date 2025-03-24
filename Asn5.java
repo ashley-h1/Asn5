@@ -22,6 +22,7 @@ public class Asn5{
         for (int i : intArr){
             System.out.println(i);
         }
+        stringArr.clear();
         System.out.println("Is stringArr empty? " + stringArr.isEmpty());
         //add everything in intarr
         int x = 0;
@@ -36,5 +37,7 @@ public class Asn5{
             x *= intArr.get(i);
         }
         System.out.println(x);
+        intArr.replaceAll(n -> n*5);
+        System.out.println("Does intArr have 5? " + intArr.contains(5));
     }
 }
